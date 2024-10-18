@@ -7,13 +7,13 @@ const MESSAGES = [
         name : "pepe",
     },
     {
-        namne : "Alejandro",
+        name : "Alejandro",
     },
     {
-        nombre : "Santiago",
+        name : "Santiago",
     },
     {
-        nombre : "Fran",
+        name : "Fran",
     }
 ]
 app.use(cors());

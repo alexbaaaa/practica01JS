@@ -4,7 +4,7 @@ class Ui {
         messages.forEach(element => {
             let clone = div.cloneNode(true);
             let firstChild = clone.firstElementChild;
-            console.log(firstChild);
+            console.log(element.name);
             firstChild.appendChild(document.createTextNode(element.name));
             console.log(firstChild);
         });
