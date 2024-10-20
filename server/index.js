@@ -1,6 +1,7 @@
-const epress = require('express');
+const express = require('express');
 const cors = require('cors');
-const app = epress();
+const path = require('path');
+const app = express();
 const PORT = 3000;
 const MESSAGES = [
     {
@@ -20,8 +21,14 @@ const MESSAGES = [
     }
 ]
 app.use(cors());
+app.use(express.static('public'));
 
-app.get('/',(req,res)=>{
+//Enviar un archivo en concreto de un directorio
+app.get('/prueba',(req,res)=>{
+    res.sendFile(path.join(__dirname, 'public', 'index2.html'));
+});
+
+app.get('/message',(req,res)=>{
     res.send(JSON.stringify(MESSAGES));
 });
 
