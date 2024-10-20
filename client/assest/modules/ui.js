@@ -3,10 +3,9 @@ class Ui {
         let div = document.getElementById(fatherName);
         messages.forEach(element => {
             let clone = div.cloneNode(true);
-            let firstChild = clone.firstElementChild;
-            console.log(element.name);
-            firstChild.appendChild(document.createTextNode(element.name));
-            console.log(firstChild);
+            clone.firstElementChild.firstChild.nodeValue = element.name;
+            clone.style.display = 'block';
+            div.insertAdjacentElement('afterend', clone);
         });
         
         

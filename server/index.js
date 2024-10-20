@@ -4,7 +4,7 @@ const app = epress();
 const PORT = 3000;
 const MESSAGES = [
     {
-        name : "pepe",
+        name : "Pepe",
     },
     {
         name : "Alejandro",
@@ -14,6 +14,9 @@ const MESSAGES = [
     },
     {
         name : "Fran",
+    },
+    {
+        name : "Raul",
     }
 ]
 app.use(cors());
