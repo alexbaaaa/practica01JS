@@ -20,7 +20,7 @@ const MESSAGES = [
         name : "Raul",
     }
 ]
-app.use(cors());
+
 app.use(express.static('public'));
 
 //Enviar un archivo en concreto de un directorio
